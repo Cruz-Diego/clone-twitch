@@ -5,10 +5,11 @@ export default function UserInfo(props) {
   const infoUser = props.infoUser;
   const statusUser = props.statusUser;
   const views = props.views;
-
+/*<img src={ imgCard } alt="img" className="imgCard"/>
+<span className={ props.isActive ? "userImg" : "UserImgNone" }>{userImg}</span>*/
   return (
     <div className="userCard">
-      <span className={ props.isActive ? "userImg" : "UserImgNone" }>{userImg}</span>
+      <img className={ props.isActive ? "userImg" : "UserImgNone" } src={userImg} alt="user"/>
       <div className="conteinerInfo">
         <p className="nameUser">{nameUser}</p>
         <p className="infoUser">{infoUser}</p>

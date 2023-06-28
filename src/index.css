@@ -42,14 +42,12 @@ body {
   height: 27px;
   width: 27px;
   border-radius: 50%;
-  background-image: url(https://static-cdn.jtvnw.net/ttv-boxart/509660-285x380.jpg);
-  background-size: cover;
 }
 .UserImgNone {
   height: 27px;
   width: 27px;
   border-radius: 50%;
-  background-color: rgb(146, 146, 146);
+  filter: grayscale(100%);
 }
 .conteinerInfo {
   display: flex;
@@ -104,8 +102,26 @@ body {
 .card {
   position: relative;
 }
-.card :hover {
+.imgCard {
+  height: 270px;
+  width: 200px;
+  z-index: 1;
+  position: relative;
+}
+.card img:hover {
   cursor: pointer;
+  transform: translate(0.375rem, -0.375rem);
+  transition: all 0.3s ease;
+}
+.backgroundImg {
+  background-color: blueviolet;
+  top: 0;
+  left: 0;
+  height: 270px;
+  width: 200px;
+  transition: all 0.15s ease;
+  z-index: 0;
+  position: absolute;
 }
 .card p {
   margin: 0;
@@ -115,15 +131,6 @@ body {
 }
 .card p:nth-of-type(2) {
   color: #9f9f9f;
-}
-.imgCard {
-  height: 270px;
-  width: 200px;
-  background-image: url(https://static-cdn.jtvnw.net/ttv-boxart/512998_IGDB-285x380.jpg);
-  background-size: cover;
-}
-.imgCard :hover {
-  cursor: pointer;
 }
 .newContent {
   display: flex;
@@ -138,6 +145,7 @@ body {
   top: 15px;
   left: 130px;
   color: #353535;
+  z-index: 1;
 }
 .newContentNone {
   display: flex;
