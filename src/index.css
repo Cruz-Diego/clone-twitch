@@ -149,7 +149,7 @@ body {
   transform-origin: top left;
 }
 .card:after {
-  right: 0.3rem;
+  right: 0rem;
   bottom: 2.9rem;
   transform-origin: bottom right;
   transform: rotate(45deg) scale(0);
@@ -157,7 +157,6 @@ body {
 .card:hover:before {
   transform: rotate(-45deg);
 }
-
 .card:hover:after {
   transform: rotate(45deg);
 }
