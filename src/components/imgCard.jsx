@@ -8,8 +8,8 @@ export default function ImgCard(props) {
     return(
       <>
         <article className="card">   
-            <img src={ imgCard } alt="img" className="imgCard"/>
-            <div className="backgroundImg"></div>
+          <img src={ imgCard } alt="img" className="imgCard"/>
+          <div className="backgroundImg"></div>
           <p className="titleCard">{titleCard}</p>
           <p className="viewersCard">{viewersCard}</p>
           <div className= { props.isNew ? "newContent" : "newContentNone" }>{newContent}</div>
